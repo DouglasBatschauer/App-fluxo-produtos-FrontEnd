@@ -2,26 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
 
-## Development server
+#########FrontEnd###########
+Para fazer o projeto funcionar perfeitamente basta ter o nodeJs instalado na maquina(preferencia ultima versao), dar um clone do projeto front end na maquina, apos isso ir no diretorio raiz do projeto e no prompt ou no git bash basta dar um npm install, ele ira instalar todas as dependencias que o projeto necessita.
+apos finalizar basta utilizar o comando ng serve no git bash ou no prompt(cmd) que o nodeJs irá subir o projeto,
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#########BackEnd###### ==> Repositorio: https://github.com/DouglasBatschauer/App-fluxo-produtos-BackEnd.git
+Na parte do back end basta dar um clone também do projeto, apos isso utiliza-se de alguma IDE para abrir o projeto, com isso basta dar um depurar(debugar) ou dar um implantar(deploy) no projeto, com isso ele ira subir o tomCat que é utilizado no projeto para subir localmente o mesmo.
 
-## Code scaffolding
+########WAMPSERVER######
+Na parte de conexão entre banco de dados e mySql utilizei o wamp para subir localmente o http para fazer a conexão, com isso é necessário instalar o wampServer e abrir a porta do mySql(3306).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+***Com isso ja e possivel fazer o projeto funcionar perfeitamente no browser.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+$$$$$$IMPORTANTE$$$$$$$$$
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+O SCRIPT COM AS TABELAS E INSERTS DE CONTA PARA UTILIZAR PARA O LOGIN E OS REGISTROS DOS PRODUTOS ESTA NA PASTA RAIZ DO PROJETO BACK-END : https://github.com/DouglasBatschauer/App-fluxo-produtos-BackEnd.git
