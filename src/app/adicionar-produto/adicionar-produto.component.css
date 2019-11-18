@@ -1,0 +1,37 @@
+.backGroundImage{
+    background-image: url("../../assets/image/BackGroundImage/produtos.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.divPrincipal{
+    margin-top: 15%;
+}
+div{
+    margin: 0 auto;
+    padding: 0;
+}
+.divPreco{
+    margin: 0;
+    float: none;
+}
+.divSelection{
+    margin: 0;
+    float: none;
+}
+.divButtonEnviar{
+    text-align: right;
+    margin: 0 auto;
+}
+.botaoEnviar{
+    margin-top: 1rem;
+    text-align: right;
+    border-radius: 6px;
+    font-size: 18px;
+}
+.divNmResponsavel{
+    margin-top: 1rem;
+}

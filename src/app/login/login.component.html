@@ -1,0 +1,24 @@
+<div class="login-background">
+    <div class="modal-dialog text-center container justify-content-center align-items-center">
+        <div class="col-12 main-section">
+            <div class="modal-content">
+                <div class="col-12 user-img">
+                    <img [src]="getPathImage()">
+                </div>
+                <div class="col-12 form-input">
+                    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+                        <div class="form-group">
+                            <input type="text" ngModel name="userLogin" class="form-control" placeholder="
+                            Digite seu Usuário">
+                        </div>
+                        <div class="form-group">
+                            <input type="password"  ngModel name="passwordLogin" class="form-control" placeholder="
+                            Digite sua Senha">
+                        </div>
+                        <button type="submit" class="btn btn-success">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>

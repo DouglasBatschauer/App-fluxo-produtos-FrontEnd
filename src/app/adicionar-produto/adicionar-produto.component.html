@@ -1,0 +1,47 @@
+<div class="backGroundImage">
+<div class="divPrincipal">
+<form  #f="ngForm" (ngSubmit)="onSubmit(f)" class=" w-100 p-3 container row-lg-6 row-md-4 ">
+    <div class="form-row row-lg-8">
+        <div class="col-md-8 mb-3 col-lg-8">
+            <label for="validationDefault01">Nome do Produto</label>
+            <input type="text" class="form-control" 
+            id="validationDefault01" placeholder="Nome do Produto" name ="nmProduto" ngModel required>
+        </div>
+    </div>
+    <div class="form-row row-lg-8">
+        <div class="col-md-8 mb-3 col-lg-8">
+            <label for="validationDefault02">Descrição do produto</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name ="descricaoProd" ngModel rows="3"></textarea>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-row row-lg-8 justify-content-center">
+            <div class="col-md-4 col-lg-4 divPreco">
+                <label for="validationDefaultUsername">Preco</label>
+                <div class="input-group">
+                    <input type="text" currencyMask [(ngModel)]="precoProduto"  [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+                    class="form-control" name ="precoProd"
+                    id="validationDefaultUsername" placeholder="Preço" aria-describedby="inputGroupPrepend2" required>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 divSelection">
+                <label for="inputEstado">Setor</label>
+                <select id="inputEstado" type="String"  ngModel class="form-control" name="nmSetor">
+                    <option disabled selected value="" >Escolher...</option>
+                    <option *ngFor="let setores of getSetores()" [ngValue]="setores">
+                        {{ setores }}</option>
+                </select>
+            </div>  
+        </div>
+    </div>
+    <div class="col-md-8 mb-3 col-lg-8 divNmResponsavel">
+        <label for="validationDefault07">Nome do Responsável</label>
+        <input type="text" class="form-control" 
+        id="validationDefault07" placeholder="Nome do Resposável" name ="nmResponsavel" ngModel required>
+    </div>    
+    <div class="col-lg-8 col-md-4 divButtonEnviar">
+        <button class="btn btn-dark botaoEnviar" type="submit">Salvar</button>
+    </div>       
+</form>
+</div>
+</div>

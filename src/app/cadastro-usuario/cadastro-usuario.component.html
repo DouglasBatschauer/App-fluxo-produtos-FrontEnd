@@ -1,0 +1,40 @@
+<div class="divBackGround">
+    <form  #form="ngForm" (ngSubmit)="onSubmitUser(form)" class="divPrincipal w-100 p-3 container row-lg-6 row-md-4 ">
+        <div class="form-row row-lg-8">
+            <div class="col-md-8 mb-3 col-lg-8">
+                <label for="validationDefault01">Nome do Usuario</label>
+                <input type="text" class="form-control" 
+                id="validationDefault01" placeholder="Nome do Usuario" name ="nmUsuario" ngModel required>
+            </div>
+        </div>
+        <div class="form-row row-lg-8">
+            <div class="col-md-8 mb-3 col-lg-8">
+                <label for="validationDefault02">CPF</label>
+                <input type="text" class="form-control" 
+                id="validationDefault02" placeholder="CPF" name ="userCpf" ngModel required>
+            </div>
+        </div>
+        <div class="container">
+            <div class="form-row row-lg-8 justify-content-center">
+                <div class="col-md-4 col-lg-4 divSenha">
+                    <label for="validationDefaultSenha">Senha</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" name ="userSenha"
+                        id="validationDefaultSenha" placeholder="Senha" ngModel aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 divSelection">
+                    <label for="inputEstado">Setor</label>
+                    <select id="inputEstado" type="String"  ngModel class="form-control" name="dsUserSetor">
+                        <option disabled selected value="" >Escolher...</option>
+                        <option *ngFor="let setores of getSetores()" [ngValue]="setores">
+                            {{ setores }}</option>
+                    </select>
+                </div>  
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-4 divButtonEnviar">
+            <button class="btn btn-dark botaoEnviar" type="submit">Salvar</button>
+        </div>       
+    </form>
+</div>
